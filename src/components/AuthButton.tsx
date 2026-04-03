@@ -22,7 +22,7 @@ const AuthButton = () => {
             <span className="text-sm text-white">{user?.fullName || user?.primaryEmailAddress?.emailAddress}</span>
           </div>
           {/* Clerk's UserButton provides avatar, account management, and sign-out */}
-          <UserButton afterSignOutUrl="/cryptoflow/" />
+          <UserButton afterSignOutUrl="/" />
         </div>
       </SignedIn>
     </>

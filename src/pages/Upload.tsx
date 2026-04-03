@@ -226,7 +226,7 @@ export default function Upload() {
                 {uploadComplete && (
                   <button
                     className="w-full py-6 rounded-full gradient-green text-black font-bold tracking-[0.2em] uppercase text-sm hover:scale-[1.02] transition-all shadow-xl"
-                    onClick={() => navigate(`/cryptoflow/analysis${uploadResult?.id ? `?uploadId=${uploadResult.id}` : ''}`)}
+                    onClick={() => navigate(`/analysis${uploadResult?.id ? `?uploadId=${uploadResult.id}` : ''}`)}
                   >
                     Open Analysis Hub
                   </button>

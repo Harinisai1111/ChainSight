@@ -72,48 +72,48 @@ const App = () => {
           <ToastContainer />
           <BrowserRouter>
             <Routes>
-              <Route path="/cryptoflow/" element={<Index />} />
-              <Route path="/cryptoflow/dashboard" element={
+              <Route path="/" element={<Index />} />
+              <Route path="/dashboard" element={
                 <ProtectedRoute>
                   <Dashboard />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/upload" element={
+              <Route path="/upload" element={
                 <ProtectedRoute>
                   <Upload />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/analysis" element={
+              <Route path="/analysis" element={
                 <ProtectedRoute>
                   <Analysis />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/graph" element={
+              <Route path="/graph" element={
                 <ProtectedRoute>
                   <Graph />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/heatmap" element={
+              <Route path="/heatmap" element={
                 <ProtectedRoute>
                   <Heatmap />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/reports" element={
+              <Route path="/reports" element={
                 <ProtectedRoute>
                   <Reports />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/settings" element={
+              <Route path="/settings" element={
                 <ProtectedRoute>
                   <Settings />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/patterns" element={
+              <Route path="/patterns" element={
                 <ProtectedRoute>
                   <Patterns />
                 </ProtectedRoute>
               } />
-              <Route path="/cryptoflow/benchmarks" element={
+              <Route path="/benchmarks" element={
                 <ProtectedRoute>
                   <Benchmarks />
                 </ProtectedRoute>

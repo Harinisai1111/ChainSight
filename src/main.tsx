@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { ClerkProvider, useAuth } from '@clerk/clerk-react'
 import { useEffect, StrictMode } from 'react'
-import { setClerkTokenGetter } from './lib/api'
+import { setClerkTokenGetter } from '@/lib/api'
 import App from './App.tsx'
 import './index.css'
 
@@ -22,7 +22,7 @@ function ClerkTokenBridge() {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/cryptoflow/">
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <ClerkTokenBridge />
       <App />
     </ClerkProvider>

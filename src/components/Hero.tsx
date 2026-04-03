@@ -36,11 +36,11 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
           <Button size="lg" className="bg-white text-black hover:bg-gray-200 px-12 py-8 rounded-none text-xl font-medium transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_50px_rgba(255,255,255,0.2)]"
-            onClick={() => handleAction('/cryptoflow/upload')}>
+            onClick={() => handleAction('/upload')}>
             ANALYZE TRANSACTIONS
           </Button>
           <Button variant="ghost" size="lg" className="text-white hover:bg-white/5 px-12 py-8 rounded-none text-xl font-light tracking-wide border border-white/10 backdrop-blur-md"
-            onClick={() => handleAction('/cryptoflow/dashboard')}>
+            onClick={() => handleAction('/dashboard')}>
             LIVE DASHBOARD
             <ArrowUpRight className="ml-2 h-6 w-6 opacity-30" />
           </Button>

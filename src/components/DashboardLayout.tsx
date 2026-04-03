@@ -22,13 +22,13 @@ interface DashboardLayoutProps {
 }
 
 const navigation = [
-  { name: "Overview", href: "/cryptoflow/dashboard", icon: LayoutDashboard },
-  { name: "Upload", href: "/cryptoflow/upload", icon: Upload },
-  { name: "Analysis", href: "/cryptoflow/analysis", icon: BarChart3 },
-  { name: "Visualizer", href: "/cryptoflow/graph", icon: Share2 },
-  { name: "Patterns", href: "/cryptoflow/patterns", icon: Network },
-  { name: "Reports", href: "/cryptoflow/reports", icon: FileText },
-  { name: "Settings", href: "/cryptoflow/settings", icon: Settings },
+  { name: "Overview", href: "/dashboard", icon: LayoutDashboard },
+  { name: "Upload", href: "/upload", icon: Upload },
+  { name: "Analysis", href: "/analysis", icon: BarChart3 },
+  { name: "Visualizer", href: "/graph", icon: Share2 },
+  { name: "Patterns", href: "/patterns", icon: Network },
+  { name: "Reports", href: "/reports", icon: FileText },
+  { name: "Settings", href: "/settings", icon: Settings },
 ];
 
 export const DashboardLayout = ({ children }: DashboardLayoutProps) => {

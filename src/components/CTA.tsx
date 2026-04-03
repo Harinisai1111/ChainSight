@@ -9,9 +9,9 @@ const CTA = () => {
 
   const handleDemo = () => {
     if (isSignedIn) {
-      navigate('/cryptoflow/dashboard/');
+      navigate('/dashboard/');
     } else {
-      openSignIn({ afterSignInUrl: '/cryptoflow/dashboard/' });
+      openSignIn({ afterSignInUrl: '/dashboard/' });
     }
   };
 

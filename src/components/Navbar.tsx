@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const handleGetStarted = () => {
     if (isSignedIn) {
-      navigate('/cryptoflow/dashboard/');
+      navigate('/dashboard/');
     } else {
-      openSignIn({ afterSignInUrl: '/cryptoflow/dashboard/' });
+      openSignIn({ afterSignInUrl: '/dashboard/' });
     }
   };
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

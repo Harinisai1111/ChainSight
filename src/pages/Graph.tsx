@@ -282,7 +282,7 @@ export default function Graph() {
                 {uploads.length === 0 && (
                   <Button 
                     className="mt-8 bg-white text-black hover:bg-gray-200 rounded-none px-10 py-6 text-[10px] tracking-[0.2em] font-bold transition-all duration-500 uppercase italic"
-                    onClick={() => navigate('/cryptoflow/upload')}
+                    onClick={() => navigate('/upload')}
                   >
                     INITIALIZE_UPLOAD
                   </Button>

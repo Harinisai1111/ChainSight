@@ -68,14 +68,14 @@ export default function Analysis() {
           </div>
           <div className="flex items-center space-x-4">
              <button 
-               onClick={() => navigate(`/cryptoflow/graph${uploadId ? `?uploadId=${uploadId}` : ''}`)}
+               onClick={() => navigate(`/graph${uploadId ? `?uploadId=${uploadId}` : ''}`)}
                className="px-8 py-3 bg-white text-black rounded-full font-bold text-[10px] tracking-[0.2em] uppercase hover:scale-105 transition-all shadow-2xl flex items-center space-x-2"
              >
                <span>Global Visualization</span>
                <ArrowUpRight className="h-4 w-4" />
              </button>
               <button 
-                onClick={() => navigate('/cryptoflow/graph')}
+                onClick={() => navigate('/graph')}
                 className="flex items-center space-x-3 bg-white/5 px-6 py-3 rounded-full border border-white/5 hover:bg-white/10 transition-all group"
               >
                 <div className="grid grid-cols-4 gap-0.5">
@@ -174,7 +174,7 @@ export default function Analysis() {
 
                       <div className="flex items-center justify-end pt-4 border-t border-white/5">
                          <button 
-                           onClick={() => navigate('/cryptoflow/reports')}
+                           onClick={() => navigate('/reports')}
                            className="text-[10px] font-bold text-gray-500 hover:text-white uppercase tracking-widest"
                          >
                            Export Log
