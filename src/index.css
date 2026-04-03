@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+    --radius: 1.5rem;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 0%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 0% 0%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background: radial-gradient(circle at 10% 20%, rgba(20, 20, 20, 1) 0%, rgba(0, 0, 0, 1) 90%);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply bg-black/40 backdrop-blur-3xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)];
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-2xl border border-white/5 hover:border-white/20 transition-all duration-700 shadow-2xl;
+    border-radius: 2rem;
+  }
+
+  .pill {
+    @apply rounded-full border border-white/10 bg-white/5 backdrop-blur-xl px-6 py-2 transition-all duration-300;
+  }
+
+  .pill-active {
+    @apply bg-white text-black font-semibold;
+  }
+
+  .gradient-green {
+    background: linear-gradient(135deg, #a3e635 0%, #22c55e 100%);
+  }
+
+  .gradient-orange {
+    background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+  }
+
+  .glow-orange {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+  }
+
+  .bg-fluid {
+    background: 
+      radial-gradient(circle at 0% 0%, rgba(40, 40, 40, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 100% 100%, rgba(60, 60, 60, 0.1) 0%, transparent 50%),
+      black;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 1s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Custom chart animations and effects */
+.chart-bar {
+  @apply rounded-t-lg transition-all duration-1000 ease-out;
+  transform-origin: bottom;
+}
+
+.chart-bar:hover {
+  filter: brightness(1.2);
+}

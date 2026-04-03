@@ -1,0 +1,2577 @@
+{
+  "id": "0cea853a-d78e-4e8e-82fc-1f8269caf67f",
+  "user_id": "user_3Bpeuh5lOJftQh9JBnaCZGuxGO2",
+  "filename": "Demo_DS.csv",
+  "file_path": "uploads\\0cea853a-d78e-4e8e-82fc-1f8269caf67f.csv",
+  "file_ext": ".csv",
+  "uploaded_at": "2026-04-03T07:54:21.588258",
+  "status": "completed",
+  "row_count": 459,
+  "size": 27877,
+  "description": null,
+  "patterns": [
+    {
+      "id": "pattern_structuring_1",
+      "type": "Structuring",
+      "severity": "critical",
+      "confidence": 0.988329022684518,
+      "transactions": 136,
+      "description": "Detected 136 addresses splitting transactions (structuring pattern)",
+      "addresses": [
+        "user_42",
+        "user_7",
+        "user_13",
+        "user_117",
+        "user_12",
+        "user_8",
+        "user_29",
+        "user_110",
+        "user_19",
+        "user_40",
+        "user_24",
+        "user_82",
+        "user_71",
+        "user_88",
+        "user_41",
+        "user_59",
+        "user_102",
+        "user_32",
+        "user_68",
+        "user_94"
+      ],
+      "avgDegree": 6.176470588235294
+    },
+    {
+      "id": "pattern_layering_2",
+      "type": "Layering",
+      "severity": "critical",
+      "confidence": 0.988329022684518,
+      "transactions": 136,
+      "description": "Detected 136 addresses aggregating transactions (layering pattern)",
+      "addresses": [
+        "user_20",
+        "user_10",
+        "user_47",
+        "user_65",
+        "user_56",
+        "user_12",
+        "user_106",
+        "user_81",
+        "user_74",
+        "user_29",
+        "user_18",
+        "user_70",
+        "user_72",
+        "user_14",
+        "user_25",
+        "user_92",
+        "user_80",
+        "user_69",
+        "user_60",
+        "user_24"
+      ],
+      "avgDegree": 6.176470588235294
+    },
+    {
+      "id": "pattern_chain_3",
+      "type": "Chain/Intermediary",
+      "severity": "high",
+      "confidence": 0.961696902434983,
+      "transactions": 167,
+      "description": "Detected 167 potential intermediary nodes in transaction chains",
+      "addresses": [
+        "clean_wallet_A",
+        "clean_wallet_B",
+        "hub_alpha",
+        "hub_beta",
+        "hub_delta",
+        "hub_gamma",
+        "layer1_1",
+        "layer1_2",
+        "layer1_3",
+        "layer1_4",
+        "layer1_5",
+        "layer1_6",
+        "layer1_7",
+        "layer1_8",
+        "layer1_9",
+        "layer2_1",
+        "layer2_2",
+        "layer2_3",
+        "layer2_4",
+        "layer2_5"
+      ]
+    },
+    {
+      "id": "pattern_smurfing_4",
+      "type": "Smurfing",
+      "severity": "critical",
+      "confidence": 0.961696902434983,
+      "transactions": 167,
+      "description": "167 wallets flagged as potential smurf mules (both receiving and sending multiple transactions)",
+      "addresses": [
+        "clean_wallet_A",
+        "clean_wallet_B",
+        "hub_alpha",
+        "hub_beta",
+        "hub_delta",
+        "hub_gamma",
+        "layer1_1",
+        "layer1_2",
+        "layer1_3",
+        "layer1_4",
+        "layer1_5",
+        "layer1_6",
+        "layer1_7",
+        "layer1_8",
+        "layer1_9",
+        "layer2_1",
+        "layer2_2",
+        "layer2_3",
+        "layer2_4",
+        "layer2_5"
+      ]
+    }
+  ],
+  "suspicious_addresses": [
+    {
+      "address": "mule_A_16",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.475468248128891,
+      "transactionCount": 1,
+      "avgScore": 0.475468248128891
+    },
+    {
+      "address": "mule_A_8",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47534316778182983,
+      "transactionCount": 1,
+      "avgScore": 0.47534316778182983
+    },
+    {
+      "address": "mule_A_7",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47534218430519104,
+      "transactionCount": 1,
+      "avgScore": 0.47534218430519104
+    },
+    {
+      "address": "mule_A_6",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4746791422367096,
+      "transactionCount": 1,
+      "avgScore": 0.4746791422367096
+    },
+    {
+      "address": "mule_A_15",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47460973262786865,
+      "transactionCount": 1,
+      "avgScore": 0.47460973262786865
+    },
+    {
+      "address": "mule_A_10",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4743645489215851,
+      "transactionCount": 1,
+      "avgScore": 0.4743645489215851
+    },
+    {
+      "address": "mule_A_1",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4739428460597992,
+      "transactionCount": 1,
+      "avgScore": 0.4739428460597992
+    },
+    {
+      "address": "mule_A_3",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4733595848083496,
+      "transactionCount": 1,
+      "avgScore": 0.4733595848083496
+    },
+    {
+      "address": "mule_A_14",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4727110266685486,
+      "transactionCount": 1,
+      "avgScore": 0.4727110266685486
+    },
+    {
+      "address": "mule_A_17",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4727044999599457,
+      "transactionCount": 1,
+      "avgScore": 0.4727044999599457
+    },
+    {
+      "address": "mule_A_4",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47251608967781067,
+      "transactionCount": 1,
+      "avgScore": 0.47251608967781067
+    },
+    {
+      "address": "mule_A_5",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47064563632011414,
+      "transactionCount": 1,
+      "avgScore": 0.47064563632011414
+    },
+    {
+      "address": "mule_A_2",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4701172411441803,
+      "transactionCount": 1,
+      "avgScore": 0.4701172411441803
+    },
+    {
+      "address": "mule_A_9",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.47007861733436584,
+      "transactionCount": 1,
+      "avgScore": 0.47007861733436584
+    },
+    {
+      "address": "mule_A_12",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.46845078468322754,
+      "transactionCount": 1,
+      "avgScore": 0.46845078468322754
+    },
+    {
+      "address": "mule_A_11",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.46753934025764465,
+      "transactionCount": 1,
+      "avgScore": 0.46753934025764465
+    },
+    {
+      "address": "mule_A_13",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.46741268038749695,
+      "transactionCount": 1,
+      "avgScore": 0.46741268038749695
+    },
+    {
+      "address": "layer2_7",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4475974440574646,
+      "transactionCount": 1,
+      "avgScore": 0.4475974440574646
+    },
+    {
+      "address": "layer2_2",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.44284939765930176,
+      "transactionCount": 1,
+      "avgScore": 0.44284939765930176
+    },
+    {
+      "address": "layer2_9",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.442478209733963,
+      "transactionCount": 1,
+      "avgScore": 0.442478209733963
+    },
+    {
+      "address": "layer1_4",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43817636370658875,
+      "transactionCount": 1,
+      "avgScore": 0.43817636370658875
+    },
+    {
+      "address": "layer1_5",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43774065375328064,
+      "transactionCount": 1,
+      "avgScore": 0.43774065375328064
+    },
+    {
+      "address": "layer1_2",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.437389612197876,
+      "transactionCount": 1,
+      "avgScore": 0.437389612197876
+    },
+    {
+      "address": "layer2_6",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43694522976875305,
+      "transactionCount": 1,
+      "avgScore": 0.43694522976875305
+    },
+    {
+      "address": "layer2_5",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4362870156764984,
+      "transactionCount": 1,
+      "avgScore": 0.4362870156764984
+    },
+    {
+      "address": "layer1_8",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43626633286476135,
+      "transactionCount": 1,
+      "avgScore": 0.43626633286476135
+    },
+    {
+      "address": "layer2_8",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4352343678474426,
+      "transactionCount": 1,
+      "avgScore": 0.4352343678474426
+    },
+    {
+      "address": "layer1_9",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43508920073509216,
+      "transactionCount": 1,
+      "avgScore": 0.43508920073509216
+    },
+    {
+      "address": "layer2_3",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.434638649225235,
+      "transactionCount": 1,
+      "avgScore": 0.434638649225235
+    },
+    {
+      "address": "layer1_1",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4346194267272949,
+      "transactionCount": 1,
+      "avgScore": 0.4346194267272949
+    },
+    {
+      "address": "layer1_3",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43319565057754517,
+      "transactionCount": 1,
+      "avgScore": 0.43319565057754517
+    },
+    {
+      "address": "user_48",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.43184694647789,
+      "transactionCount": 1,
+      "avgScore": 0.43184694647789
+    },
+    {
+      "address": "layer1_7",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4317544996738434,
+      "transactionCount": 1,
+      "avgScore": 0.4317544996738434
+    },
+    {
+      "address": "layer1_6",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4312029480934143,
+      "transactionCount": 1,
+      "avgScore": 0.4312029480934143
+    },
+    {
+      "address": "temp_wallet_26",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4309214651584625,
+      "transactionCount": 1,
+      "avgScore": 0.4309214651584625
+    },
+    {
+      "address": "user_73",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4298218786716461,
+      "transactionCount": 1,
+      "avgScore": 0.4298218786716461
+    },
+    {
+      "address": "user_108",
+      "riskLevel": "medium",
+      "suspiciousScore": 0.4279608130455017,
+      "transactionCount": 1,
+      "avgScore": 0.4279608130455017
+    }
+  ],
+  "analysis_summary": {
+    "totalTransactions": 183,
+    "suspiciousTransactions": 0,
+    "highRiskTransactions": 0,
+    "avgSuspiciousScore": 0.40906983613967896,
+    "maxSuspiciousScore": 0.475468248128891,
+    "patternsDetected": 4,
+    "riskDistribution": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 183
+    },
+    "suspicious_node_count": 0,
+    "max_risk_score": 0.475468248128891
+  },
+  "subgraph": {
+    "nodes": [
+      {
+        "id": "clean_wallet_A",
+        "index": 0,
+        "suspiciousScore": 0.5385528475046157,
+        "mlScore": 0.38552847504615784,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 17,
+          "out": 0
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "clean_wallet_B",
+        "index": 1,
+        "suspiciousScore": 0.5412451773881912,
+        "mlScore": 0.41245177388191223,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 9,
+          "out": 0
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer1_1",
+        "index": 6,
+        "suspiciousScore": 0.3934619426727295,
+        "mlScore": 0.4346194267272949,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 1,
+          "out": 3
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer1_4",
+        "index": 9,
+        "suspiciousScore": 0.39381763637065886,
+        "mlScore": 0.43817636370658875,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 1,
+          "out": 3
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer1_6",
+        "index": 11,
+        "suspiciousScore": 0.3931202948093414,
+        "mlScore": 0.4312029480934143,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 1,
+          "out": 3
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer1_9",
+        "index": 14,
+        "suspiciousScore": 0.3935089200735092,
+        "mlScore": 0.43508920073509216,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 1,
+          "out": 3
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_1",
+        "index": 15,
+        "suspiciousScore": 0.2924604922533035,
+        "mlScore": 0.4246049225330353,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 2,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_2",
+        "index": 16,
+        "suspiciousScore": 0.2942849397659302,
+        "mlScore": 0.44284939765930176,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 2,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "layer2_3",
+        "index": 17,
+        "suspiciousScore": 0.0434638649225235,
+        "mlScore": 0.434638649225235,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_4",
+        "index": 18,
+        "suspiciousScore": 0.3920868545770645,
+        "mlScore": 0.42086854577064514,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 3,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_5",
+        "index": 19,
+        "suspiciousScore": 0.04362870156764984,
+        "mlScore": 0.4362870156764984,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_6",
+        "index": 20,
+        "suspiciousScore": 0.04369452297687531,
+        "mlScore": 0.43694522976875305,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_7",
+        "index": 21,
+        "suspiciousScore": 0.04475974440574646,
+        "mlScore": 0.4475974440574646,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "layer2_8",
+        "index": 22,
+        "suspiciousScore": 0.04352343678474427,
+        "mlScore": 0.4352343678474426,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 0,
+          "out": 1
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "layer2_9",
+        "index": 23,
+        "suspiciousScore": 0.0442478209733963,
+        "mlScore": 0.442478209733963,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_1",
+        "index": 24,
+        "suspiciousScore": 0.04739428460597992,
+        "mlScore": 0.4739428460597992,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_10",
+        "index": 25,
+        "suspiciousScore": 0.04743645489215851,
+        "mlScore": 0.4743645489215851,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_11",
+        "index": 26,
+        "suspiciousScore": 0.04675393402576447,
+        "mlScore": 0.46753934025764465,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_12",
+        "index": 27,
+        "suspiciousScore": 0.046845078468322754,
+        "mlScore": 0.46845078468322754,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_13",
+        "index": 28,
+        "suspiciousScore": 0.0467412680387497,
+        "mlScore": 0.46741268038749695,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_14",
+        "index": 29,
+        "suspiciousScore": 0.04727110266685486,
+        "mlScore": 0.4727110266685486,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_15",
+        "index": 30,
+        "suspiciousScore": 0.047460973262786865,
+        "mlScore": 0.47460973262786865,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_16",
+        "index": 31,
+        "suspiciousScore": 0.047546824812889105,
+        "mlScore": 0.475468248128891,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_17",
+        "index": 32,
+        "suspiciousScore": 0.04727044999599457,
+        "mlScore": 0.4727044999599457,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_2",
+        "index": 33,
+        "suspiciousScore": 0.047011724114418035,
+        "mlScore": 0.4701172411441803,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_3",
+        "index": 34,
+        "suspiciousScore": 0.047335958480834966,
+        "mlScore": 0.4733595848083496,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_4",
+        "index": 35,
+        "suspiciousScore": 0.04725160896778107,
+        "mlScore": 0.47251608967781067,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_5",
+        "index": 36,
+        "suspiciousScore": 0.04706456363201142,
+        "mlScore": 0.47064563632011414,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_6",
+        "index": 37,
+        "suspiciousScore": 0.047467914223670964,
+        "mlScore": 0.4746791422367096,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_7",
+        "index": 38,
+        "suspiciousScore": 0.04753421843051911,
+        "mlScore": 0.47534218430519104,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_8",
+        "index": 39,
+        "suspiciousScore": 0.04753431677818298,
+        "mlScore": 0.47534316778182983,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "mule_A_9",
+        "index": 40,
+        "suspiciousScore": 0.04700786173343659,
+        "mlScore": 0.47007861733436584,
+        "predictedLabel": "licit",
+        "riskLevel": "low",
+        "risk_level": "low",
+        "degree": {
+          "in": 1,
+          "out": 1
+        },
+        "isSeedNode": true,
+        "type": "suspicious"
+      },
+      {
+        "id": "smurf_source_A",
+        "index": 41,
+        "suspiciousScore": 0.5363018721342087,
+        "mlScore": 0.3630187213420868,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 0,
+          "out": 17
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      },
+      {
+        "id": "smurf_source_B",
+        "index": 42,
+        "suspiciousScore": 0.5384609341621399,
+        "mlScore": 0.3846093416213989,
+        "predictedLabel": "licit",
+        "riskLevel": "medium",
+        "risk_level": "medium",
+        "degree": {
+          "in": 0,
+          "out": 4
+        },
+        "isSeedNode": false,
+        "type": "neighbor"
+      }
+    ],
+    "edges": [
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_1",
+        "suspicious": false,
+        "weight": 0.4739428460597992
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_2",
+        "suspicious": false,
+        "weight": 0.4701172411441803
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_3",
+        "suspicious": false,
+        "weight": 0.4733595848083496
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_4",
+        "suspicious": false,
+        "weight": 0.47251608967781067
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_5",
+        "suspicious": false,
+        "weight": 0.47064563632011414
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_6",
+        "suspicious": false,
+        "weight": 0.4746791422367096
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_7",
+        "suspicious": false,
+        "weight": 0.47534218430519104
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_8",
+        "suspicious": false,
+        "weight": 0.47534316778182983
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_9",
+        "suspicious": false,
+        "weight": 0.47007861733436584
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_10",
+        "suspicious": false,
+        "weight": 0.4743645489215851
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_11",
+        "suspicious": false,
+        "weight": 0.46753934025764465
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_12",
+        "suspicious": false,
+        "weight": 0.46845078468322754
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_13",
+        "suspicious": false,
+        "weight": 0.46741268038749695
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_14",
+        "suspicious": false,
+        "weight": 0.4727110266685486
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_15",
+        "suspicious": false,
+        "weight": 0.47460973262786865
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_16",
+        "suspicious": false,
+        "weight": 0.475468248128891
+      },
+      {
+        "source": "smurf_source_A",
+        "target": "mule_A_17",
+        "suspicious": false,
+        "weight": 0.4727044999599457
+      },
+      {
+        "source": "mule_A_1",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4739428460597992
+      },
+      {
+        "source": "mule_A_2",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4701172411441803
+      },
+      {
+        "source": "mule_A_3",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4733595848083496
+      },
+      {
+        "source": "mule_A_4",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47251608967781067
+      },
+      {
+        "source": "mule_A_5",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47064563632011414
+      },
+      {
+        "source": "mule_A_6",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4746791422367096
+      },
+      {
+        "source": "mule_A_7",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47534218430519104
+      },
+      {
+        "source": "mule_A_8",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47534316778182983
+      },
+      {
+        "source": "mule_A_9",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47007861733436584
+      },
+      {
+        "source": "mule_A_10",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4743645489215851
+      },
+      {
+        "source": "mule_A_11",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.46753934025764465
+      },
+      {
+        "source": "mule_A_12",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.46845078468322754
+      },
+      {
+        "source": "mule_A_13",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.46741268038749695
+      },
+      {
+        "source": "mule_A_14",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4727110266685486
+      },
+      {
+        "source": "mule_A_15",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.47460973262786865
+      },
+      {
+        "source": "mule_A_16",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.475468248128891
+      },
+      {
+        "source": "mule_A_17",
+        "target": "clean_wallet_A",
+        "suspicious": false,
+        "weight": 0.4727044999599457
+      },
+      {
+        "source": "smurf_source_B",
+        "target": "layer1_1",
+        "suspicious": false,
+        "weight": 0.4346194267272949
+      },
+      {
+        "source": "smurf_source_B",
+        "target": "layer1_4",
+        "suspicious": false,
+        "weight": 0.43817636370658875
+      },
+      {
+        "source": "smurf_source_B",
+        "target": "layer1_6",
+        "suspicious": false,
+        "weight": 0.4312029480934143
+      },
+      {
+        "source": "smurf_source_B",
+        "target": "layer1_9",
+        "suspicious": false,
+        "weight": 0.43508920073509216
+      },
+      {
+        "source": "layer1_1",
+        "target": "layer2_2",
+        "suspicious": false,
+        "weight": 0.44284939765930176
+      },
+      {
+        "source": "layer1_1",
+        "target": "layer2_5",
+        "suspicious": false,
+        "weight": 0.4362870156764984
+      },
+      {
+        "source": "layer1_1",
+        "target": "layer2_3",
+        "suspicious": false,
+        "weight": 0.434638649225235
+      },
+      {
+        "source": "layer1_4",
+        "target": "layer2_4",
+        "suspicious": false,
+        "weight": 0.43817636370658875
+      },
+      {
+        "source": "layer1_4",
+        "target": "layer2_2",
+        "suspicious": false,
+        "weight": 0.44284939765930176
+      },
+      {
+        "source": "layer1_4",
+        "target": "layer2_6",
+        "suspicious": false,
+        "weight": 0.43817636370658875
+      },
+      {
+        "source": "layer1_6",
+        "target": "layer2_4",
+        "suspicious": false,
+        "weight": 0.4312029480934143
+      },
+      {
+        "source": "layer1_6",
+        "target": "layer2_9",
+        "suspicious": false,
+        "weight": 0.442478209733963
+      },
+      {
+        "source": "layer1_6",
+        "target": "layer2_1",
+        "suspicious": false,
+        "weight": 0.4312029480934143
+      },
+      {
+        "source": "layer1_9",
+        "target": "layer2_4",
+        "suspicious": false,
+        "weight": 0.43508920073509216
+      },
+      {
+        "source": "layer1_9",
+        "target": "layer2_1",
+        "suspicious": false,
+        "weight": 0.43508920073509216
+      },
+      {
+        "source": "layer1_9",
+        "target": "layer2_7",
+        "suspicious": false,
+        "weight": 0.4475974440574646
+      },
+      {
+        "source": "layer2_1",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.4246049225330353
+      },
+      {
+        "source": "layer2_2",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.44284939765930176
+      },
+      {
+        "source": "layer2_3",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.434638649225235
+      },
+      {
+        "source": "layer2_4",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.42086854577064514
+      },
+      {
+        "source": "layer2_5",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.4362870156764984
+      },
+      {
+        "source": "layer2_6",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.43694522976875305
+      },
+      {
+        "source": "layer2_7",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.4475974440574646
+      },
+      {
+        "source": "layer2_8",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.4352343678474426
+      },
+      {
+        "source": "layer2_9",
+        "target": "clean_wallet_B",
+        "suspicious": false,
+        "weight": 0.442478209733963
+      }
+    ],
+    "metadata": {
+      "totalNodes": 34,
+      "totalEdges": 59,
+      "seedNodes": 20,
+      "hopDistance": 2,
+      "avgSuspiciousScore": 0.44810250401496887,
+      "maxSuspiciousScore": 0.475468248128891,
+      "highRiskCount": 0,
+      "mediumRiskCount": 0,
+      "lowRiskCount": 34
+    }
+  },
+  "predictions": [
+    {
+      "transactionId": "clean_wallet_A",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38552847504615784,
+      "confidence": 0.6144715547561646,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "clean_wallet_B",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41245177388191223,
+      "confidence": 0.5875482559204102,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "hub_alpha",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3195049464702606,
+      "confidence": 0.680495023727417,
+      "riskLevel": "low"
+    },
+    {
+      "transactionId": "hub_beta",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3443162143230438,
+      "confidence": 0.6556837558746338,
+      "riskLevel": "low"
+    },
+    {
+      "transactionId": "hub_delta",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.33153536915779114,
+      "confidence": 0.6684646606445312,
+      "riskLevel": "low"
+    },
+    {
+      "transactionId": "hub_gamma",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3523174226284027,
+      "confidence": 0.6476825475692749,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_1",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4346194267272949,
+      "confidence": 0.5653805732727051,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_2",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.437389612197876,
+      "confidence": 0.562610387802124,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_3",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43319565057754517,
+      "confidence": 0.5668043494224548,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_4",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43817636370658875,
+      "confidence": 0.5618236064910889,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_5",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43774065375328064,
+      "confidence": 0.562259316444397,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_6",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4312029480934143,
+      "confidence": 0.5687970519065857,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_7",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4317544996738434,
+      "confidence": 0.568245530128479,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_8",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43626633286476135,
+      "confidence": 0.563733696937561,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer1_9",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43508920073509216,
+      "confidence": 0.5649107694625854,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_1",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4246049225330353,
+      "confidence": 0.5753951072692871,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_2",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.44284939765930176,
+      "confidence": 0.5571506023406982,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_3",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.434638649225235,
+      "confidence": 0.5653613805770874,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_4",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42086854577064514,
+      "confidence": 0.5791314840316772,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_5",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4362870156764984,
+      "confidence": 0.5637129545211792,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_6",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43694522976875305,
+      "confidence": 0.5630548000335693,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_7",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4475974440574646,
+      "confidence": 0.5524025559425354,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_8",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4352343678474426,
+      "confidence": 0.5647656321525574,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "layer2_9",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.442478209733963,
+      "confidence": 0.5575218200683594,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_1",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4739428460597992,
+      "confidence": 0.5260571241378784,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_10",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4743645489215851,
+      "confidence": 0.5256354808807373,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_11",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.46753934025764465,
+      "confidence": 0.5324606895446777,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_12",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.46845078468322754,
+      "confidence": 0.5315492153167725,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_13",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.46741268038749695,
+      "confidence": 0.5325872898101807,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_14",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4727110266685486,
+      "confidence": 0.5272889733314514,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_15",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47460973262786865,
+      "confidence": 0.5253902673721313,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_16",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.475468248128891,
+      "confidence": 0.5245317220687866,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_17",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4727044999599457,
+      "confidence": 0.5272954702377319,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_2",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4701172411441803,
+      "confidence": 0.5298827886581421,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_3",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4733595848083496,
+      "confidence": 0.5266404151916504,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_4",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47251608967781067,
+      "confidence": 0.5274839401245117,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_5",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47064563632011414,
+      "confidence": 0.5293543338775635,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_6",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4746791422367096,
+      "confidence": 0.5253208875656128,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_7",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47534218430519104,
+      "confidence": 0.5246578454971313,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_8",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47534316778182983,
+      "confidence": 0.5246568322181702,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "mule_A_9",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.47007861733436584,
+      "confidence": 0.5299214124679565,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "smurf_source_A",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3630187213420868,
+      "confidence": 0.6369812488555908,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "smurf_source_B",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3846093416213989,
+      "confidence": 0.6153906583786011,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_13",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4251169264316559,
+      "confidence": 0.5748831033706665,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_14",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4194311201572418,
+      "confidence": 0.5805689096450806,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_18",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42556849122047424,
+      "confidence": 0.5744315385818481,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_20",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41395333409309387,
+      "confidence": 0.5860466957092285,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_21",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4018716812133789,
+      "confidence": 0.5981283187866211,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_22",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40681275725364685,
+      "confidence": 0.5931872129440308,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_25",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4001758098602295,
+      "confidence": 0.5998241901397705,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_26",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4309214651584625,
+      "confidence": 0.5690785646438599,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_27",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41545370221138,
+      "confidence": 0.5845463275909424,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_28",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42542657256126404,
+      "confidence": 0.5745733976364136,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_29",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3989153504371643,
+      "confidence": 0.6010846495628357,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_3",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4119664430618286,
+      "confidence": 0.5880335569381714,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_31",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4261768162250519,
+      "confidence": 0.5738232135772705,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_34",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40213170647621155,
+      "confidence": 0.5978683233261108,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_35",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41237834095954895,
+      "confidence": 0.5876216888427734,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_39",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40308448672294617,
+      "confidence": 0.5969154834747314,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_4",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4173774719238281,
+      "confidence": 0.5826225280761719,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_5",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.410753071308136,
+      "confidence": 0.589246928691864,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_6",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39818286895751953,
+      "confidence": 0.6018171310424805,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_7",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.427148699760437,
+      "confidence": 0.572851300239563,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "temp_wallet_8",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41555798053741455,
+      "confidence": 0.5844420194625854,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_1",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41137591004371643,
+      "confidence": 0.588624119758606,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_10",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3627047836780548,
+      "confidence": 0.6372952461242676,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_100",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4144202768802643,
+      "confidence": 0.5855797529220581,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_101",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37315043807029724,
+      "confidence": 0.6268495321273804,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_102",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39718520641326904,
+      "confidence": 0.602814793586731,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_103",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40877723693847656,
+      "confidence": 0.5912227630615234,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_104",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40000277757644653,
+      "confidence": 0.5999972224235535,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_105",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39186158776283264,
+      "confidence": 0.6081384420394897,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_106",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40228989720344543,
+      "confidence": 0.597710132598877,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_107",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3859962522983551,
+      "confidence": 0.6140037775039673,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_108",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4279608130455017,
+      "confidence": 0.5720391869544983,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_109",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38342738151550293,
+      "confidence": 0.6165726184844971,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_11",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39935025572776794,
+      "confidence": 0.6006497144699097,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_110",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4096032977104187,
+      "confidence": 0.5903967022895813,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_111",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4021397829055786,
+      "confidence": 0.5978602170944214,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_112",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4003690183162689,
+      "confidence": 0.5996309518814087,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_113",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38909393548965454,
+      "confidence": 0.6109060645103455,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_114",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38179513812065125,
+      "confidence": 0.6182048320770264,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_115",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3994176387786865,
+      "confidence": 0.6005823612213135,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_116",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37792667746543884,
+      "confidence": 0.6220732927322388,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_117",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4138529598712921,
+      "confidence": 0.5861470699310303,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_118",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39261144399642944,
+      "confidence": 0.6073885560035706,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_119",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39807650446891785,
+      "confidence": 0.6019234657287598,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_12",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38233059644699097,
+      "confidence": 0.617669403553009,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_13",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3957935869693756,
+      "confidence": 0.6042064428329468,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_14",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42569252848625183,
+      "confidence": 0.5743074417114258,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_15",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40238139033317566,
+      "confidence": 0.597618579864502,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_16",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38647186756134033,
+      "confidence": 0.6135281324386597,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_17",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3996039628982544,
+      "confidence": 0.6003960371017456,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_18",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3997598886489868,
+      "confidence": 0.6002401113510132,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_19",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3902292549610138,
+      "confidence": 0.6097707748413086,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_2",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4098200500011444,
+      "confidence": 0.5901799201965332,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_20",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3754492402076721,
+      "confidence": 0.6245507597923279,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_21",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3900763988494873,
+      "confidence": 0.6099236011505127,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_22",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3985103964805603,
+      "confidence": 0.6014896035194397,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_23",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4256051182746887,
+      "confidence": 0.5743948817253113,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_24",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37153953313827515,
+      "confidence": 0.6284604668617249,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_25",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4076685309410095,
+      "confidence": 0.5923314690589905,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_26",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4064716696739197,
+      "confidence": 0.5935283303260803,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_27",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38617005944252014,
+      "confidence": 0.6138299703598022,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_28",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42420899868011475,
+      "confidence": 0.5757910013198853,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_29",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40052491426467896,
+      "confidence": 0.599475085735321,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_3",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.36067357659339905,
+      "confidence": 0.6393264532089233,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_30",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39405006170272827,
+      "confidence": 0.6059499382972717,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_31",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39711567759513855,
+      "confidence": 0.6028842926025391,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_32",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3790096044540405,
+      "confidence": 0.6209903955459595,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_33",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4075336754322052,
+      "confidence": 0.5924663543701172,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_34",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37629345059394836,
+      "confidence": 0.623706579208374,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_35",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3987734615802765,
+      "confidence": 0.6012265682220459,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_36",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3686535060405731,
+      "confidence": 0.6313464641571045,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_37",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4125010371208191,
+      "confidence": 0.5874989628791809,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_38",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4086553454399109,
+      "confidence": 0.5913446545600891,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_39",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39103755354881287,
+      "confidence": 0.6089624166488647,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_4",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4116409122943878,
+      "confidence": 0.5883591175079346,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_40",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38517794013023376,
+      "confidence": 0.6148220300674438,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_41",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40914371609687805,
+      "confidence": 0.5908563137054443,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_42",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40127238631248474,
+      "confidence": 0.5987275838851929,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_43",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4216247498989105,
+      "confidence": 0.5783752202987671,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_44",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4210590720176697,
+      "confidence": 0.5789409279823303,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_45",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39188361167907715,
+      "confidence": 0.6081163883209229,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_46",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4090072214603424,
+      "confidence": 0.59099280834198,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_47",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40305620431900024,
+      "confidence": 0.5969437956809998,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_48",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.43184694647789,
+      "confidence": 0.5681530237197876,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_49",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4184693992137909,
+      "confidence": 0.5815305709838867,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_5",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42341259121894836,
+      "confidence": 0.576587438583374,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_50",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4110634922981262,
+      "confidence": 0.5889365077018738,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_51",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.389902263879776,
+      "confidence": 0.6100977659225464,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_52",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3802422285079956,
+      "confidence": 0.6197577714920044,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_53",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41481778025627136,
+      "confidence": 0.5851821899414062,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_54",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40464070439338684,
+      "confidence": 0.5953593254089355,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_55",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40119946002960205,
+      "confidence": 0.598800539970398,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_56",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39250069856643677,
+      "confidence": 0.6074993014335632,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_57",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.414508193731308,
+      "confidence": 0.5854917764663696,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_58",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38161924481391907,
+      "confidence": 0.6183807849884033,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_59",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.36326900124549866,
+      "confidence": 0.6367310285568237,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_6",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3863307237625122,
+      "confidence": 0.6136692762374878,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_60",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4044232964515686,
+      "confidence": 0.5955767035484314,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_61",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37178853154182434,
+      "confidence": 0.628211498260498,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_62",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39851903915405273,
+      "confidence": 0.6014809608459473,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_63",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4147813320159912,
+      "confidence": 0.5852186679840088,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_64",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4042867124080658,
+      "confidence": 0.5957132577896118,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_65",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3458997905254364,
+      "confidence": 0.6541001796722412,
+      "riskLevel": "low"
+    },
+    {
+      "transactionId": "user_66",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4259473979473114,
+      "confidence": 0.5740525722503662,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_67",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.404741495847702,
+      "confidence": 0.5952584743499756,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_68",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.35860443115234375,
+      "confidence": 0.6413955688476562,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_69",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3792901933193207,
+      "confidence": 0.6207097768783569,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_7",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38287657499313354,
+      "confidence": 0.6171234250068665,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_70",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40902361273765564,
+      "confidence": 0.590976357460022,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_71",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39683961868286133,
+      "confidence": 0.6031603813171387,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_72",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3995070159435272,
+      "confidence": 0.6004929542541504,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_73",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4298218786716461,
+      "confidence": 0.5701781511306763,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_74",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39064449071884155,
+      "confidence": 0.6093555092811584,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_75",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.42386919260025024,
+      "confidence": 0.5761308073997498,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_76",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4192478656768799,
+      "confidence": 0.5807521343231201,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_77",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39616307616233826,
+      "confidence": 0.6038368940353394,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_78",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41797927021980286,
+      "confidence": 0.5820207595825195,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_79",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4116990566253662,
+      "confidence": 0.5883009433746338,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_8",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37967491149902344,
+      "confidence": 0.6203250885009766,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_80",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.399728387594223,
+      "confidence": 0.6002715826034546,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_81",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3740399181842804,
+      "confidence": 0.625960111618042,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_82",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4179381728172302,
+      "confidence": 0.5820618271827698,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_83",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4043954908847809,
+      "confidence": 0.5956045389175415,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_84",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3981902599334717,
+      "confidence": 0.6018097400665283,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_85",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3965478837490082,
+      "confidence": 0.6034520864486694,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_86",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41439759731292725,
+      "confidence": 0.5856024026870728,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_87",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4027103781700134,
+      "confidence": 0.5972896218299866,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_88",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.39556023478507996,
+      "confidence": 0.6044397354125977,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_89",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4033524990081787,
+      "confidence": 0.5966475009918213,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_9",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38030681014060974,
+      "confidence": 0.6196931600570679,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_90",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.41440385580062866,
+      "confidence": 0.5855961441993713,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_91",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.37942299246788025,
+      "confidence": 0.6205769777297974,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_92",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38185155391693115,
+      "confidence": 0.6181484460830688,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_93",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40595728158950806,
+      "confidence": 0.5940427184104919,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_94",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4149373471736908,
+      "confidence": 0.5850626230239868,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_95",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.3931058347225189,
+      "confidence": 0.6068941354751587,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_96",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4050024449825287,
+      "confidence": 0.5949975252151489,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_97",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.4059411585330963,
+      "confidence": 0.5940588712692261,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_98",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.38868436217308044,
+      "confidence": 0.6113156080245972,
+      "riskLevel": "medium"
+    },
+    {
+      "transactionId": "user_99",
+      "predictedLabel": "licit",
+      "suspiciousScore": 0.40608227252960205,
+      "confidence": 0.593917727470398,
+      "riskLevel": "medium"
+    }
+  ]
+}
