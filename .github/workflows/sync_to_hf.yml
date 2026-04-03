@@ -15,4 +15,18 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://harinisai1111:$HF_TOKEN@huggingface.co/spaces/harinisai1111/chainsight-backend main
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          
+          # Create a new orphan branch (no history of binary files)
+          git checkout --orphan hf-deploy
+          
+          # Only add files needed for the Backend Space
+          git add Backend AI Dockerfile requirements.txt README.md
+          
+          # Commit the clean state
+          git commit -m "Clean deploy to Hugging Face Hub"
+          
+          # Force push the clean branch to Hugging Face Hub's main
+          git push --force https://harinisai1111:$HF_TOKEN@huggingface.co/spaces/harinisai1111/chainsight-backend hf-deploy:main
