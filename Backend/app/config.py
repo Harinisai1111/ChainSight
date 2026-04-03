@@ -64,7 +64,7 @@ class Settings(BaseSettings):
         return [ext.strip() for ext in self.ALLOWED_EXTENSIONS.split(",") if ext.strip()]
     
     # ML Model
-    MODEL_PATH: str = "../AI/ML/smurf_hunter_model.pt"
+    MODEL_PATH: str = "../../AI/ML/smurf_hunter_model.pt"
     
     # Redis (for caching and rate limiting)
     REDIS_URL: Optional[str] = None
