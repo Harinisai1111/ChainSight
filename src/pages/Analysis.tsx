@@ -67,24 +67,6 @@ export default function Analysis() {
             <p className="text-gray-500 text-[11px] font-medium uppercase tracking-[0.2em]">Neural Engine: Neural_V4 // Pattern Recognition Active</p>
           </div>
           <div className="flex items-center space-x-4">
-             <button 
-               onClick={() => navigate(`/graph${uploadId ? `?uploadId=${uploadId}` : ''}`)}
-               className="px-8 py-3 bg-white text-black rounded-full font-bold text-[10px] tracking-[0.2em] uppercase hover:scale-105 transition-all shadow-2xl flex items-center space-x-2"
-             >
-               <span>Global Visualization</span>
-               <ArrowUpRight className="h-4 w-4" />
-             </button>
-              <button 
-                onClick={() => navigate('/graph')}
-                className="flex items-center space-x-3 bg-white/5 px-6 py-3 rounded-full border border-white/5 hover:bg-white/10 transition-all group"
-              >
-                <div className="grid grid-cols-4 gap-0.5">
-                   {[1,2,3,4,5,6,7,8].map(i => (
-                     <div key={i} className={`w-1.5 h-1.5 rounded-sm ${i % 3 === 0 ? 'bg-green-500' : i % 4 === 0 ? 'bg-green-800' : 'bg-white/10'}`}></div>
-                   ))}
-                </div>
-                <span className="text-[11px] font-bold tracking-widest uppercase text-gray-400 group-hover:text-white">Heat Map</span>
-             </button>
           </div>
         </div>
 
