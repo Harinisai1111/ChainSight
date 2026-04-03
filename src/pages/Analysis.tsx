@@ -3,7 +3,7 @@ import { DashboardLayout } from "@/components/DashboardLayout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AlertTriangle, TrendingUp, Users, Clock, Brain, Link as LinkIcon, Activity, CheckCircle, Loader2, ArrowUpRight } from "lucide-react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { analysisApi, type Pattern, type SuspiciousAddress } from "@/lib/api";
+import { analysisApi, type Pattern, type SuspiciousAddress } from "@/lib/app-api";
 
 export default function Analysis() {
   const [searchParams] = useSearchParams();

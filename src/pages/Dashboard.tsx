@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { dashboardApi, uploadApi, type Upload } from "@/lib/api";
+import { dashboardApi, uploadApi, type Upload } from "@/lib/app-api";
 
 interface DashboardStats {
   totalTransactions: number;

@@ -5,7 +5,7 @@ import { Network, Upload as UploadIcon, RefreshCw, Loader2, AlertTriangle, Downl
 import { useState, useCallback, useEffect, useRef } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import UltraGraphVisualization from "@/components/UltraGraphVisualization";
-import { graphApi, uploadApi, type GraphData } from "@/lib/api";
+import { graphApi, uploadApi, type GraphData } from "@/lib/app-api";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { toast } from "@/components/ToastNotification";

@@ -3,7 +3,7 @@ import { DashboardLayout } from "@/components/DashboardLayout";
 import { Upload as UploadIcon, FileText, AlertCircle, CheckCircle2, X, Table, AlertTriangle, Loader2, ArrowUpRight } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { useNavigate } from "react-router-dom";
-import { uploadApi, type Upload as UploadType } from "@/lib/api";
+import { uploadApi, type Upload as UploadType } from "@/lib/app-api";
 
 export default function Upload() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);

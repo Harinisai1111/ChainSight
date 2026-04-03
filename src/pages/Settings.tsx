@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Bell, Shield, Database, Mail, Loader2, Copy, Check, Plus, Trash2, User, Lock, Terminal, ArrowUpRight } from "lucide-react";
-import { settingsApi } from "@/lib/api";
+import { settingsApi } from "@/lib/app-api";
 
 interface ApiKey {
   id: string;

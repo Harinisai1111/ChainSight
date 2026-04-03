@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { analysisApi, graphApi } from "@/lib/api";
+import { analysisApi, graphApi } from "@/lib/app-api";
 import { Loader2, Info, AlertTriangle, Activity, Clock } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

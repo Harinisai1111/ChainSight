@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { FileText, Download, Calendar, Filter, Loader2, AlertTriangle, Shield, Zap, Search, ArrowUpRight } from "lucide-react";
-import { reportsApi, uploadApi, type Report } from "@/lib/api";
+import { reportsApi, uploadApi, type Report } from "@/lib/app-api";
 
 export default function Reports() {
   const [reports, setReports] = useState<Report[]>([]);

@@ -10,7 +10,7 @@ import {
   Grid3X3, RefreshCw, Loader2, TrendingUp, AlertTriangle,
   Activity, Clock, Zap, Info
 } from "lucide-react";
-import { analysisApi, uploadApi, graphApi } from "@/lib/api";
+import { analysisApi, uploadApi, graphApi } from "@/lib/app-api";
 
 interface HeatmapCell {
   x: number;

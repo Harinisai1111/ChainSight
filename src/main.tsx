@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { ClerkProvider, useAuth } from '@clerk/clerk-react'
 import { useEffect, StrictMode } from 'react'
-import { setClerkTokenGetter } from '@/lib/api'
+import { setClerkTokenGetter } from '@/lib/app-api'
 import App from './App.tsx'
 import './index.css'
 
