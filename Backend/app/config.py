@@ -19,11 +19,11 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8000
     
-    # CORS - added local dev ports
-    CORS_ORIGINS: str = "http://localhost:8000,http://localhost:5173,http://localhost:5174,http://localhost:3000,http://localhost:8080,http://localhost:8081,http://localhost:8082,http://localhost:8083,http://localhost:8084,http://127.0.0.1:5173,http://127.0.0.1:8080,http://127.0.0.1:8082,http://127.0.0.1:8084"
+    # CORS - added local dev ports and production Vercel domain
+    CORS_ORIGINS: str = "https://chain-sight-mauve.vercel.app,http://localhost:8000,http://localhost:5173,http://localhost:5174,http://localhost:3000,http://localhost:8080,http://localhost:8081,http://localhost:8082,http://localhost:8083,http://localhost:8084,http://127.0.0.1:5173,http://127.0.0.1:8080,http://127.0.0.1:8082,http://127.0.0.1:8084"
     
-    # Frontend URL for OAuth redirects
-    FRONTEND_URL: str = "http://localhost:8084"
+    # Frontend URL for OAuth redirects (Vercel Production)
+    FRONTEND_URL: str = "https://chain-sight-mauve.vercel.app"
     
     @property
     def cors_origins_list(self) -> List[str]:
