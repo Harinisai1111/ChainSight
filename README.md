@@ -1,6 +1,16 @@
+---
+title: ChainSight Backend
+emoji: 🔍
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 <p align="center">
   <img src="public/favicon/android-chrome-512x512.png" alt="ChainSight Logo" width="120" height="120">
 </p>
+
 
 <h1 align="center">🔍 ChainSight (SMURF HUNTER)</h1>
 
