@@ -33,6 +33,7 @@ wheels/
 Backend/dataset/
 *.csv
 *.pt
+!AI/ML/smurf_hunter_model.pt
 *.pth
 *.pkl
 *.h5
