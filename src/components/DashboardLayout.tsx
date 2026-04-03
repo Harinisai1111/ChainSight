@@ -48,7 +48,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
 
   const handleLogout = async () => {
     await signOut();
-    navigate("/cryptoflow/");
+    navigate("/");
   };
 
   return (
@@ -65,7 +65,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         `}>
           {/* Logo */}
           <div className="flex items-center space-x-6">
-            <Link to="/cryptoflow/dashboard" className="text-xl font-bold tracking-tighter italic">
+            <Link to="/dashboard" className="text-xl font-bold tracking-tighter italic">
               ChainSight
             </Link>
             
@@ -102,7 +102,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
               <LogOut className="h-5 w-5" />
             </button>
 
-            <Link to="/cryptoflow/settings">
+            <Link to="/settings">
               <Avatar className="w-10 h-10 border-2 border-white/10 hover:border-white/40 transition-all duration-500">
                 <AvatarImage src={user?.imageUrl} />
                 <AvatarFallback className="bg-white/5 text-[10px]">{user?.firstName?.[0]}</AvatarFallback>
