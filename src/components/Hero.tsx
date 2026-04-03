@@ -56,7 +56,7 @@ const Hero = () => {
               <p className="text-[10px] tracking-[0.4em] text-gray-500 uppercase">Graphs Scanned</p>
            </div>
            <div className="text-center group cursor-default">
-              <p className="text-5xl font-extralight text-white mb-3">リアルタイム</p>
+              <p className="text-5xl font-extralight text-white mb-3">REAL-TIME</p>
               <p className="text-[10px] tracking-[0.4em] text-gray-500 uppercase">Real-Time Detection</p>
            </div>
         </div>
