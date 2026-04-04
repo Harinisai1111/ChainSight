@@ -1,4 +1,10 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://harinisai1111-chainsight-backend.hf.space';
+const isProd = import.meta.env.PROD;
+const envUrl = import.meta.env.VITE_API_BASE_URL;
+
+// Force HTTPS for production Hugging Face URL if not on localhost
+const API_BASE_URL = (isProd && envUrl && !envUrl.includes('localhost'))
+  ? envUrl.replace('http://', 'https://')
+  : (envUrl || 'https://harinisai1111-chainsight-backend.hf.space');
 const API_PREFIX = '/api/v1';
 
 // Clerk token getter — set by main.tsx after ClerkProvider loads
