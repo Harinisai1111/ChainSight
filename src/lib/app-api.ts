@@ -109,7 +109,13 @@ const getAuthHeaders = async (): Promise<Record<string, string>> => {
 };
 
 const request = async (path: string, options: RequestInit = {}) => {
-  const url = `${API_BASE_URL}${API_PREFIX}${path}`;
+  let url = `${API_BASE_URL}${API_PREFIX}${path}`;
+  
+  // ULTRA-AGGRESSIVE FIX: If we are on HTTPS, the API MUST be HTTPS
+  if (window.location.protocol === 'https:' && url.startsWith('http://')) {
+    url = url.replace('http://', 'https://');
+  }
+  
   const authHeaders = await getAuthHeaders();
   const res = await fetch(url, {
     ...options,
@@ -185,7 +191,13 @@ export const reportsApi = {
   },
   downloadReport: async (reportId: string) => {
     const authHeaders = await getAuthHeaders();
-    const url = `${API_BASE_URL}${API_PREFIX}/reports/download/${encodeURIComponent(reportId)}`;
+    let url = `${API_BASE_URL}${API_PREFIX}/reports/download/${encodeURIComponent(reportId)}`;
+    
+    // Force HTTPS if on secure origin
+    if (window.location.protocol === 'https:' && url.startsWith('http://')) {
+      url = url.replace('http://', 'https://');
+    }
+    
     const res = await fetch(url, { method: 'GET', headers: authHeaders });
     if (!res.ok) {
       const text = await res.text();
