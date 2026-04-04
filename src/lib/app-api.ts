@@ -95,10 +95,14 @@ const getAuthHeaders = async (): Promise<Record<string, string>> => {
 };
 
 const request = async (path: string, options: RequestInit = {}) => {
-  let url = `${API_BASE_URL}${API_PREFIX}${path}`;
+  // Add cache buster to EVERY request
+  const separator = path.includes('?') ? '&' : '?';
+  const cacheBuster = `_cv=${Date.now()}`;
   
-  // ULTRA-AGGRESSIVE FIX: If we are on HTTPS, the API MUST be HTTPS
-  if (window.location.protocol === 'https:' && url.startsWith('http://')) {
+  let url = `${API_BASE_URL}${API_PREFIX}${path}${separator}${cacheBuster}`;
+  
+  // FORCE HTTPS NO MATTER WHAT
+  if (url.startsWith('http://')) {
     url = url.replace('http://', 'https://');
   }
   
