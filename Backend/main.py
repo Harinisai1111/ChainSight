@@ -23,6 +23,8 @@ from app.routers import (
 )
 from app.services.ml_service import ml_service
 
+from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -61,8 +63,12 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc",
     openapi_url="/openapi.json",
-    lifespan=lifespan
+    lifespan=lifespan,
+    redirect_slashes=False  # Disable redirection of slashes to prevent 307 redirects
 )
+
+# Add ProxyHeadersMiddleware so FastAPI knows it's behind a secure proxy (Hugging Face)
+app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
 
 # Configure CORS
 app.add_middleware(

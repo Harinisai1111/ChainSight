@@ -58,7 +58,7 @@ async def generate_report(
         )
 
 
-@router.get("/", response_model=ReportListResponse)
+@router.get("", response_model=ReportListResponse)
 async def list_reports(
     page: int = Query(default=1, ge=1),
     limit: int = Query(default=10, ge=1, le=100),
