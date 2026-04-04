@@ -1,22 +1,8 @@
-const getApiBaseUrl = () => {
-  const envUrl = import.meta.env.VITE_API_BASE_URL;
-  
-  // 1. If it's localhost, keep it as is (dev mode)
-  if (envUrl && envUrl.includes('localhost')) {
-    return envUrl;
-  }
-
-  // 2. If it's a Hugging Face Space URL, FORCE https
-  if (envUrl && envUrl.includes('.hf.space')) {
-    return envUrl.replace('http://', 'https://');
-  }
-
-  // 3. Global Fallback (always secure)
-  return envUrl || 'https://harinisai1111-chainsight-backend.hf.space';
-};
-
-const API_BASE_URL = getApiBaseUrl();
+// HARDCODED SECURE URL FOR HUGGING FACE DEPLOYMENT
+const API_BASE_URL = 'https://harinisai1111-chainsight-backend.hf.space';
 const API_PREFIX = '/api/v1';
+
+console.log("🚀 ChainSight API initialized with:", API_BASE_URL);
 
 // Clerk token getter — set by main.tsx after ClerkProvider loads
 let clerkGetToken: (() => Promise<string | null>) | null = null;
