@@ -1,1 +1,2 @@
 -r Backend/requirements.txt
+reportlab>=4.0.0
