@@ -39,6 +39,7 @@ async def generate_report(
             id=result["reportId"],
             uploadId=request.uploadId,
             type=request.type,
+            format=request.format,
             status=result["status"],
             createdAt=result.get("createdAt") or __import__("datetime").datetime.utcnow(),
             fileSize=result.get("fileSize"),

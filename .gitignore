@@ -78,3 +78,6 @@ htmlcov/
 .coverage
 .coverage.*
 .pytest_cache/
+
+# User Uploads and Reports
+Backend/uploads/

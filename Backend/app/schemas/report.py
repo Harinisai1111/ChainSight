@@ -19,6 +19,7 @@ class ReportResponse(BaseModel):
     id: str
     uploadId: str
     type: str
+    format: str
     status: str
     createdAt: datetime
     fileSize: Optional[int] = None

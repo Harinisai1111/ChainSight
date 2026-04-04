@@ -37,6 +37,29 @@ export default function Reports() {
     fetchData();
   }, []);
 
+  // Polling for generating reports
+  useEffect(() => {
+    const hasActiveReports = reports.some(r => r.status === 'generating' || r.status === 'processing');
+    if (!hasActiveReports) return;
+
+    const pollInterval = setInterval(async () => {
+      try {
+        const reportsRes = await reportsApi.getHistory(undefined, 1, 20);
+        if (reportsRes.reports) {
+          setReports(reportsRes.reports);
+          
+          // If all active reports are now finished, clear polling
+          const stillActive = reportsRes.reports.some((r: any) => r.status === 'generating' || r.status === 'processing');
+          if (!stillActive) clearInterval(pollInterval);
+        }
+      } catch (err) {
+        console.error('Polling failed:', err);
+      }
+    }, 3000);
+
+    return () => clearInterval(pollInterval);
+  }, [reports]);
+
   const handleGenerateReport = async () => {
     if (!selectedUploadId) { setError('Please select an upload first'); return; }
     setIsGenerating(true);
@@ -248,8 +271,8 @@ export default function Reports() {
                        <h4 className="text-lg font-bold tracking-tight uppercase">{(report.report_type || (report as any).type || '').replace('_', ' ')} RECOVERY</h4>
                        <div className="flex items-center space-x-6 text-[9px] font-bold tracking-widest uppercase text-gray-500">
                           <span className="flex items-center"><Calendar className="h-3 w-3 mr-2" /> {new Date(report.createdAt || (report as any).created_at).toLocaleDateString()}</span>
-                          <span className="text-white/40">{report.format.toUpperCase()}</span>
-                          <span className="text-white/20">UUID: {report.id.slice(0, 8)}</span>
+                          <span className="text-white/40">{(report.format || 'PDF').toUpperCase()}</span>
+                          <span className="text-white/20">UUID: {report.id?.slice(0, 8) || 'N/A'}</span>
                        </div>
                     </div>
                   </div>
